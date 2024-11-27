@@ -1,0 +1,6 @@
+**/.*
+**/node_modules
+**/build
+**/wd/doc
+**/logs
+**/theme

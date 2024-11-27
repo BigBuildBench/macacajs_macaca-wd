@@ -1,0 +1,49 @@
+{
+  "name": "macaca-wd",
+  "version": "4.3.6",
+  "description": "Macaca webdirver API for Node.js",
+  "keywords": [
+    "macaca",
+    "webdriver",
+    "wd",
+    "Node.js"
+  ],
+  "files": [
+    "lib/**/*.js",
+    "wd/**/*.js",
+    "wd/package.json"
+  ],
+  "main": "./lib/macaca-wd.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/macacajs/macaca-wd.git"
+  },
+  "devDependencies": {
+    "eslint": "8",
+    "eslint-config-egg": "^12.2.1",
+    "git-contributor": "1",
+    "husky": "^1.3.1",
+    "jsdom": "^11.10.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "macaca-ecosystem": "1",
+    "mocha": "*",
+    "nyc": "^11.6.0",
+    "stoppable": "^1.1.0",
+    "vuepress": "^1.9.8"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "mocha",
+    "lint": "eslint --fix --ext js,ts lib test wd/lib",
+    "contributor": "git-contributor"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "homepage": "https://github.com/macacajs/macaca-wd",
+  "license": "MIT"
+}
